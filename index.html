@@ -19,11 +19,27 @@
       <button>Get Space Images</button>
     </div>
 
+    <section class="space-fact" aria-live="polite">
+      <h2>Did You Know?</h2>
+      <p id="spaceFactText"></p>
+    </section>
+
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal for viewing full image details -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img id="modalImage" src="" alt="" class="modal-image" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalDate"></p>
+      <p id="modalExplanation"></p>
     </div>
   </div>
 
